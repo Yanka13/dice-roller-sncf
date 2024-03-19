@@ -25,10 +25,12 @@ jobs:
       - name: Create and start virtual environment
         run: |
           python -m venv venv
-          source venv/bin/activate
+          
       
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install pipenv
+        run: pip install pipenv 
+      - name: Install pipfile
+        run: pip install pipenv  
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
